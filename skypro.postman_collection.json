@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "cc6253ed-c8ba-40e7-b638-5c2d44747657",
+		"name": "skypro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25231441"
+	},
+	"item": [
+		{
+			"name": "perform_query:regex|limit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file_name",
+							"value": "apache_logs.txt",
+							"type": "text"
+						},
+						{
+							"key": "cmd1",
+							"value": "regex",
+							"type": "text"
+						},
+						{
+							"key": "value1",
+							"value": "images\\/\\S+\\.png",
+							"type": "text"
+						},
+						{
+							"key": "cmd2",
+							"value": "limit",
+							"type": "text"
+						},
+						{
+							"key": "value2",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/perform_query",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"perform_query"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
